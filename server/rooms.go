@@ -3,8 +3,8 @@ package server
 import (
 	"sync"
 
-	"github.com/gofiber/websocket/v2"
 	"github.com/google/uuid"
+	"github.com/gorilla/websocket"
 )
 
 type Participant struct {
@@ -17,10 +17,8 @@ type RoomMap struct {
 	Map map[string][]Participant
 }
 
-func NewRoomMap() *RoomMap {
-	return &RoomMap{
-		Map: make(map[string][]Participant),
-	}
+func (r *RoomMap) Init() {
+	r.Map = make(map[string][]Participant)
 }
 
 func (r *RoomMap) Get(roomID string) []Participant {

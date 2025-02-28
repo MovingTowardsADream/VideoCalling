@@ -12,8 +12,11 @@ require (
 require (
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/fasthttp/websocket v1.5.12 // indirect
+	github.com/gofiber/fiber v1.14.6 // indirect
 	github.com/gofiber/template v1.8.3 // indirect
 	github.com/gofiber/utils v1.1.0 // indirect
+	github.com/gofiber/websocket v0.5.1 // indirect
+	github.com/gorilla/schema v1.4.1 // indirect
 	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
